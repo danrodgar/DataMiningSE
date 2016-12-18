@@ -36,23 +36,26 @@ output:
 
 ## Software Analytics
 
-Software analytics is to enable software practitioners to perform data exploration and analysis in order to obtain insightful and actionable information for data driven tasks around software and services
+`Software analytics` is to enable software practitioners to perform data exploration and analysis in order to obtain insightful and actionable information for data driven tasks around software and services
 (Zhang et al, Malets’11)
 
 <div class="centered">
-<img src="./figures/swAnalytics.png" width=700 height=300>
+<img src="./figures/swAnalytics.png" width=600 height=280>
 </div>
+
+(Source: MS Research)
 
 ## Sources of Information
 
-- **Version Control Systems** or Soft Conf Mang (e.g., Git, SVN)
-    - Source code, Models, Tests, Requirements, documents...
+- `Version Control Systems` or Soft Conf Mang, e.g., Git, SVN
+    - Artifacts: Source code, Models, Tests, Requirements, Documentation,...
+    - Meta-information about the artifacts: What, Who, Where, When, Why 
     - Main public repositories: GitHUB, Bitbucket
-- Issue/Bug tracking systems (Bugzilla, Jira, SourceForge)
-- Mailing lists (question&answer websites)
-- Miscellanea
-    - Simulation can also generate tons of data! e.g.System Dynamics to dela with `What if?` questions
-    - Google Play and AppStore (e.g., reviews, starts)
+- `Issue/Bug tracking systems`: Bugzilla, Jira, SourceForge
+- `Mailing lists` (even question & answer websites)
+- Google Play and AppStore e.g., reviews, starts, updates, ...
+- Simulation can also generate tons of data! e.g. System Dynamics to deal with `What if?` questions
+    
 
 
 ## Sources of Information (Tools)
@@ -62,59 +65,59 @@ Software analytics is to enable software practitioners to perform data explorati
 </div>
 (Source:Bitergia)
 
-## Software Engieering Life Cycle 
 
 
+## Software Engieering Life Cycle (SDLC)
 
-- Requirements: What requirements will provide most user satisfaction while maximising profit, usability, etc?
+<div class="centered">
+<img src="./figures/SDLC.png" width=400 height=400>
+</div>
+(Source:Husson Univ)
 
-- Analysis and design: Can we re-organise code/modules/packages so is better distributed for performance/division of labour/allocation of resources, maintenance, etc.
+## SDLC Questions/Optimisations 
 
-- Coding: All types of metrics can be collected from code to predict defects, allocate testing, code clone detection, etc.
-    - Genetic Improvement Or how to plug modules or third party components automatically (e.g., video codecs)
+- `Requirements`: What requirements will provide most user satisfaction while maximising profit, usability, etc?
+
+- `Analysis and design`: Can we re-organise code/modules/packages so is better distributed for performance/division of labour/allocation of resources, maintenance, etc.
+    - Coupling and cohesion of modules
+
+- `Coding`: All types of metrics can be collected from code to predict defects, allocate testing, code clone detection, etc.
+    - `Genetic Improvement` or how to plug modules or third party components automatically (e.g., video codecs)
 
 ***
 
-- Testing: Most testing techniques can be seen as an optimisation problem, test cases should cover (measured LoC, branches, etc) as much as possible with the minimum no. of test cases
+- `Testing`: Most testing techniques can be seen as an optimisation problem, test cases should cover (measured as LoC, branches, etc) as much as possible with the minimum no. of test cases
     - There is also reliability estimation, when to stop testing  
 
-- Maintenance and phase out: Regression testing (or how not to break something when we fix another thing)
+- `Maintenance`: Regression testing (or how not to break something when we fix another thing)
 
+-  and phase out (time to quit)
 
 ## Project Management
 
 - What is Project Management? Decisions, decisions, decisions!
     - Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements (PMI).
-    - Iron triangle:Time, cost and quality
+    - Multiple projects/personnel/resources
+    - Iron triangle: Time, cost and quality, 
 
-- Multiple projects/personnel/resources, Project portfolio
+<div class="centered">
+<img src="./figures/Project-triangle.png" width=175 height=175>
+</div>
+Pick any two! (Source:Wikipedia) 
 
-- Decision making tasks that need to be optimised!
-    - And possible multi-objective
+****
+- Decision making tasks that need to be optimised! 
+- And possibly multi-objective!
     - Estimation of Cost/Effort/Schedules
-    
+    - Assignment of personnel to tasks
+   
 - And we can help project managers with:
     - Rules, Fuzzy rules, Association Rules
     - Regression
-    
-- Visualisation, early warning of problems, etc.
+    - Visualisation, early warning of problems, etc.
+
 
 ## From the DM point of view
-
-- Classification: defect prediction
-- Regression: Effort and cost estimation
-- Clustering:
-- Recommender Systems, e.g.:How to use an API, function calls that tend to be together
-- Time series: Evolution of Projects (Clustering/classification of time series)
-- Text/Web mining: reviews, bugs reports, requirements from textual descriptions, code comments, documentation
-- Social Network Analysis (SNA): mailing lists, GitHub
-- Process Mining: logs collected automatically in Web servers, processes followed correctly
-- Sequence patterns: Run-time traces
-- Graph Mining: Dynamic call graphs
-
-
-***
-
 ------------------ ----------------------------
 Classification        Defect prediction
 
@@ -124,8 +127,12 @@ Recommender Systems   How to use an API, function calls that tend to be together
 
 Time series           Evolution of Projects (Clustering/classification of time series)
 
-Text/Web mining       Reviews, bugs reports, requirements from textual descriptions, code comments, documentation
+Text/Web mining       Reviews, bugs reports, requirements from textual descriptions, code comments, documentation, Function and variable names
 
+------------------ ----------------------------
+
+## From the DM point of view (cont.)
+------------------ ----------------------------
 Social Net Analysis   Mailing lists, GitHub
 
 Process Mining        Logs collected automatically in Web servers, processes followed correctly
@@ -138,19 +145,20 @@ Graph Mining          Dynamic call graphs
 
 ## SE Repositories
 
-Free/Libre Open Source (FLOSS) has provided tons of data to be analysed. Nowdays, the most popular (Big Data!)
+Free/Libre Open Source (FLOSS) has provided tons of data to be analysed. Nowdays, the most popular (`Big Data`!)
 
 <div class="centered">
-<img src="./figures/GitHub.png" width=390 height=129>
+<img src="./figures/GitHub.png" width=290 height=90>
 </div>
 
 For project management, there is the ISBSG  (International SW Benchmarking Standards Group) database but it is not open: http://isbsg.org/
 
+  - `Small data`! R2016 - approx 7,000projects and 60 atts
 <div class="centered">
 <img src="./figures/isbsg.png" width=660 height=109>
 </div>
 
-  - Small data (?)  R2016 - approximately 7,000  projects and 60 attributes
+
 
 
 ## Other popular repositories: PROMISE
@@ -175,18 +183,18 @@ Ultimate Debian Database: https://udd.debian.org/
 <img src="./figures/ShowMeTheCode.png" width=400 height=250>
 </div>
 
-(Source: http://codequoter.myshopify.com/)
+(Linus Torvalds, source: http://codequoter.myshopify.com/)
 
 ## Metrics Grimore
 
 Create an empty database
 ```bash
-$mysql -u root -p -e 'create database weka_cvsanaly;'
+$mysql -u root -p -e 'create database wekaDB;'
 ```
 
 Run `CVSAnaly2` to populate DB tables
 ```bash
-$cvsanaly2 --db-user=root --db-password=*****  --db- database=weka_cvsanaly
+$cvsanaly2 --db-user=root --db-password=*****  --db- database=wekaDB
 Parsing log for /tmp/weka (svn)
 Executing extensions
 ```
@@ -196,7 +204,7 @@ Executing extensions
 Data are ready to be used!
 
 ```bash
-$ mysql -u root -p -e 'select * from weka_cvsanaly.actions limit 5;'
+$ mysql -u root -p -e 'select * from wekaDB.actions limit 5;'
 Enter password: 
 +----+------+---------+-----------+-----------+
 | id | type | file_id | commit_id | branch_id |
@@ -244,13 +252,13 @@ vg-github.py --user root --passwd *****
 
 # What about papers? {.build}
 
-There is a large number of conferences where will accept these topics of research:
-- Mining Software Repositories (MSR)
-- Optimisation related: SSBSE (Symposium on SBSE), GECCO (SBSE track)
-- And many others: SCAM, ICSE, ICSM, ESEM, PROMISES ...	
+There is a large no. of related conferences:
 
-Including most important journals:
-- Trans on SE, Empirical SE, etc.
+- Mining Software Repositories (MSR), SCAM, ICSE, ICSM, ESEM, PROMISE ...
+
+- Optimisation related: SSBSE, GECCO (SBSE track)
+
+Including most important journals: Trans on SE, Empirical SE, etc.
 
 
 ## Conclusions
