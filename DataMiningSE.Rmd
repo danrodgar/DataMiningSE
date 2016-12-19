@@ -1,7 +1,7 @@
 ---
-title: "Data Mining and optimisation for Soft Eng (and vice versa)"
+title: "Data Mining and optimisation in Soft Eng (and vice versa)"
 author: "Daniel Rodriguez, University of Alcala"
-date: "Dec 19, 2019 @ BCAM"
+date: "Dec 19, 2019 @ BCAM, 1st Data Science Workshop"
 output:
   ioslides_presentation:
     logo: logoUAH.png
@@ -53,9 +53,17 @@ output:
     - Main public repositories: GitHUB, Bitbucket
 - `Issue/Bug tracking systems`: Bugzilla, Jira, SourceForge
 - `Mailing lists` (even question & answer websites)
-- Google Play and AppStore e.g., reviews, starts, updates, ...
-- Simulation can also generate tons of data! e.g. System Dynamics to deal with `What if?` questions
+- `Google Play` and `AppStore` e.g., reviews, starts, updates ...
+- `Simulation` can also generate tons of data! e.g. System Dynamics to deal with `What if?` questions
     
+    
+****
+    
+<div class="centered">
+<img src="./figures/artifactsMeta.png" width=584 height=342>
+</div>
+
+(Source: I. Herraiz)
 
 
 ## Sources of Information (Tools)
@@ -98,7 +106,7 @@ output:
 - What is Project Management? Decisions, decisions, decisions!
     - Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements (PMI).
     - Multiple projects/personnel/resources
-    - Iron triangle: Time, cost and quality, 
+    - Iron triangle: Time, cost and scope 
 
 <div class="centered">
 <img src="./figures/Project-triangle.png" width=175 height=175>
@@ -111,7 +119,7 @@ Pick any two! (Source:Wikipedia)
     - Estimation of Cost/Effort/Schedules
     - Assignment of personnel to tasks
    
-- And we can help project managers with:
+- And we can help `project managers` with:
     - Rules, Fuzzy rules, Association Rules
     - Regression
     - Visualisation, early warning of problems, etc.
