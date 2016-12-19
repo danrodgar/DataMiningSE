@@ -28,7 +28,7 @@ output:
     2. The study of approaches as in (1)
 
 - Unlike mathematicians, software engineers should ...
-    + ... Measure, Simulate, Test, Estimate, Manage projects properly, i.e., effort estimation, planning
+    + ... Measure, Test SW, Estimate, Manage projects, i.e., effort estimation, planning
 
 > In God we trust, all others must bring data (W. Edwards Deming)
 
@@ -184,6 +184,22 @@ Ultimate Debian Database: https://udd.debian.org/
 <div class="centered">
 <img src="./figures/UDD.png" width=700 height=420>
 </div>
+
+
+## SonarQube
+
+<div class="centered">
+<img src="./figures/sonarQube.png" width=700 height=420>
+</div>
+
+
+## Grimoire
+
+<div class="centered">
+<img src="./figures/Grimoire.png" width=700 height=420>
+</div>
+
+
 
 ## Example
 
