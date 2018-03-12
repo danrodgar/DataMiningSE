@@ -1,7 +1,7 @@
 ---
 title: "Data Mining and optimisation in Soft Eng (and vice versa)"
 author: "Daniel Rodriguez, University of Alcala"
-date: "Dec 19, 2019 @ BCAM, 1st Data Science Workshop"
+date: "Dec 19, 2016 @ BCAM, 1st Data Science Workshop"
 output:
   ioslides_presentation:
     logo: logoUAH.png
