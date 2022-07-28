@@ -1,223 +1,227 @@
 ---
 title: "Data Mining and optimisation in Soft Eng (and vice versa)"
 author: "Daniel Rodriguez, University of Alcala"
-date: "Dec 19, 2016 @ BCAM, 1st Data Science Workshop"
+date: 'July 29th, 2022 @ COMPDES 2022, UNAH, Honduras'
 output:
   ioslides_presentation:
     logo: logoUAH.png
+  slidy_presentation: default
 ---
 
 ## Table of Contents
 
-- Data mining for Soft Eng
-    + What is Soft Eng/Project Management
-    + Software Analytics
-    + Information Sources
-    + Software Engineering Repositories
-- Tools
-- An vice versa? (Soft Eng for Data Scientists)
-- Conferences and journals
+-   Data mining for Soft Eng
+    -   Soft Eng/Project Management
+    -   Software Analytics
+    -   Information Sources
+    -   Software Engineering Repositories
+-   Tools
+-   An vice-versa? (Soft Eng for Data Scientists)
+-   Conferences and journals
 
 # Data Mining and Optimisation for Software Engineering
 
+## Software Engineering? {.build}
 
-## What is Software Engineering? {.build}
-
-- IEEE Standard Glossary of Software Engineering Terminology Std 610.12-1990, 1991
-    1. SE is the application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software; that is, the application of engineering to software. 
-    2. The study of approaches as in (1)
-
-- Unlike mathematicians, software engineers should ...
-    + ... Measure, Test SW, Estimate, Manage projects, i.e., effort estimation, planning
+-   IEEE Standard Glossary of SE Terminology Std 610.12-1990, 1991
+    1.  SE is the application of a systematic, disciplined, **quantifiable** approach to the development, operation, and maintenance of software; that is, the application of engineering to software.
+    2.  The study of approaches as in (1)
+-   Software engineers should ...
+    -   ... Measure, Test SW, Estimate, Manage projects, i.e., effort estimation, planning
 
 > In God we trust, all others must bring data (W. Edwards Deming)
 
-> You can’t control, what you can’t measure (Tom DeMarco)
+> You can't control, what you can't measure (Tom DeMarco)
 
 ## Software Analytics
 
-`Software analytics` is to enable software practitioners to perform data exploration and analysis in order to obtain insightful and actionable information for data driven tasks around software and services
-(Zhang et al, Malets’11)
+`Software analytics` is to enable software practitioners to perform data exploration and analysis in order to obtain insightful and actionable information for data driven tasks around software and services (Zhang et al, Malets'11)
 
-<div class="centered">
-<img src="./figures/swAnalytics.png" width=600 height=280>
-</div>
+::: centered
+<img src="./figures/swAnalytics.png" width="600" height="280"/>
+:::
 
 (Source: MS Research)
 
+
+## Software Analytics
+
+As with `KDD` (Knowledge Discovery in Databases) the idea is also to find useful information that was previously unknown! 
+
+::: centered
+<img src="./figures/rabits.png" width="600" height="350"/>
+:::
+
+
 ## Sources of Information
 
-- `Version Control Systems` or Soft Conf Mang, e.g., Git, SVN
-    - Artifacts: Source code, Models, Tests, Requirements, Documentation,...
-    - Meta-information about the artifacts: What, Who, Where, When, Why 
-    - Main public repositories: GitHUB, Bitbucket
-- `Issue/Bug tracking systems`: Bugzilla, Jira, SourceForge
-- `Mailing lists` (even question & answer websites)
-- `Google Play` and `AppStore` e.g., reviews, starts, updates ...
-- `Simulation` can also generate tons of data! e.g. System Dynamics to deal with `What if?` questions
-    
-    
-****
-    
-<div class="centered">
-<img src="./figures/artifactsMeta.png" width=584 height=342>
-</div>
+-   `Version Control Systems` or Soft Conf Mang, e.g., Git, SVN
+    -   Artifacts: Source code, Models, Tests, Requirements, Documentation,...
+    -   Meta-information about the artifacts: What, Who, Where, When, Why
+    -   Main public repositories: GitHUB, Bitbucket
+-   `Issue/Bug tracking systems`: Bugzilla, Jira, SourceForge
+-   `IDE`s: Software Testing, AI assisted development
+-   `Mailing lists` (even question & answer websites)
+-   `Google Play` and `AppStore` e.g., reviews, starts (quality), updates ...
+-   `Simulation` can also be used to generate tons of data! e.g. System Dynamics to deal with `What if?` type of questions
+
+------------------------------------------------------------------------
+
+::: centered
+<img src="./figures/artifactsMeta.png" width="584" height="342"/>
+:::
 
 (Source: I. Herraiz)
 
-
 ## Sources of Information (Tools)
 
-<div class="centered">
-<img src="./figures/swSources.png" width=700 height=400>
-</div>
+::: centered
+<img src="./figures/swSources.png" width="700" height="400"/>
+:::
+
 (Source:Bitergia)
-
-
 
 ## Software Engieering Life Cycle (SDLC)
 
-<div class="centered">
-<img src="./figures/SDLC.png" width=400 height=400>
-</div>
+::: centered
+<img src="./figures/SDLC.png" width="400" height="400"/>
+:::
+
 (Source:Husson Univ)
 
-## SDLC Questions/Optimisations 
+## SDLC Example of Possible ML related Questions/Optimisations
 
-- `Requirements`: What requirements will provide most user satisfaction while maximising profit, usability, etc?
+-   `Requirements`: What requirements will provide most user satisfaction while maximising profit, usability, etc? Effort and cost estimation with AI
 
-- `Analysis and design`: Can we re-organise code/modules/packages so is better distributed for performance/division of labour/allocation of resources, maintenance, etc.
-    - Coupling and cohesion of modules
+-   `Analysis and design`: Can we re-organise code/modules/packages so is better distributed for performance/division of labour/allocation of resources, maintenance, etc.
 
-- `Coding`: All types of metrics can be collected from code to predict defects, allocate testing, code clone detection, etc.
-    - `Genetic Improvement` or how to plug modules or third party components automatically (e.g., video codecs)
+    -   Coupling and cohesion of modules
+  
+------------------------------------------------------------------------
 
-***
+-   `Coding`: All types of metrics can be collected from code to predict artifact defects, allocate testing effort, code clone detection, etc.
 
-- `Testing`: Most testing techniques can be seen as an optimisation problem, test cases should cover (measured as LoC, branches, etc) as much as possible with the minimum no. of test cases
-    - There is also reliability estimation, when to stop testing  
+    - `Genetic Improvement` how to plug modules or third party components automatically (e.g., video codecs)?
+    
+    - `AI Assisted Development` helping with APIs, suggesting code, etc.
 
-- `Maintenance`: Regression testing (or how not to break something when we fix another thing)
+------------------------------------------------------------------------
 
--  and phase out (time to quit)
+-   `Testing`: Most testing techniques can be seen as an optimisation problem, test cases should cover (measured as LoC, branches, etc) as much as possible with the minimum no. of test cases
+
+    -   Regression testing optimisation and selection of test cases
+    -   There is also reliability estimation, when to stop testing
+
+-   `Maintenance`: Regression testing (or how not to break something when we fix another thing)
+
+-   and finally `Phase out`: When is time to stop/quit maintaining a project?
 
 ## Project Management
 
-- What is Project Management? Decisions, decisions, decisions!
-    - Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements (PMI).
-    - Multiple projects/personnel/resources
-    - Iron triangle: Time, cost and scope 
+-   Also ML can be applied in `Project Management` Decisions, decisions, decisions!
+    -   Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements (PMI).
+    -   Multiple projects/personnel/resources
+    -   Iron triangle: Time, cost and scope
 
-<div class="centered">
-<img src="./figures/Project-triangle.png" width=175 height=175>
-</div>
-Pick any two! (Source:Wikipedia) 
+::: centered
+<img src="./figures/Project-triangle.png" width="175" height="175"/>
+:::
 
-****
-- Decision making tasks that need to be optimised! 
-- And possibly multi-objective!
-    - Estimation of Cost/Effort/Schedules
-    - Assignment of personnel to tasks
-   
-- And we can help `project managers` with:
-    - Rules, Fuzzy rules, Association Rules
-    - Regression
-    - Visualisation, early warning of problems, etc.
+Pick any two! (Source:Wikipedia)
 
+------------------------------------------------------------------------
+
+-   Decision making tasks that need to be optimised!
+-   And possibly multi-objective!
+    -   Estimation of Cost/Effort/Schedules
+    -   Assignment of personnel to tasks consdiring multiple projects run in parallel
+-   And we can help `project managers` with:
+    -   Rules, Fuzzy rules, Association Rules
+    -   Regression techniques
+    -   Visualisation of project status, early warning of problems, etc.
 
 ## From the DM point of view
------------------- ----------------------------
-Classification        Defect prediction
 
-Regression            Effort and cost estimation
-
-Recommender Systems   How to use an API, function calls that tend to be together
-
-Time series           Evolution of Projects (Clustering/classification of time series)
-
-Text/Web mining       Reviews, bugs reports, requirements from textual descriptions, code comments, documentation, Function and variable names
-
------------------- ----------------------------
+|                     |                            |
+|:-------------------|:---------------------------:|
+| Classification      | Defect prediction      |
+| Regression          | Effort and cost estimation   |
+| Recommender Systems | How to use an API, function calls that tend to be together   |
+| Time series         | Evolution of Projects (Clustering/classification of time series)  |
+| Text/Web mining     | Reviews, bugs reports, requirements from textual descriptions, code comments, documentation, Function and variable names |
 
 ## From the DM point of view (cont.)
------------------- ----------------------------
-Social Net Analysis   Mailing lists, GitHub
 
-Process Mining        Logs collected automatically in Web servers, processes followed correctly
-
-Sequence patterns     Run-time traces
-
-Graph Mining          Dynamic call graphs
------------------ ----------------------------
-
+|                     |                            |
+|--------------------|:---------------------------:|
+| Social Net Analysis |   Mailing lists, GitHub    |
+| Process Mining      | Logs collected automatically in Web servers, how actual processes are run, are they followed correctly? can processes be optimised? |
+| Sequence patterns   |  Run-time traces           |
+| Graph Mining        |  Dynamic call graphs       |
 
 ## SE Repositories
 
 Free/Libre Open Source (FLOSS) has provided tons of data to be analysed. Nowdays, the most popular (`Big Data`!)
 
-<div class="centered">
-<img src="./figures/GitHub.png" width=290 height=90>
-</div>
+::: centered
+<img src="./figures/GitHub.png" width="290" height="90"/>
+:::
 
-For project management, there is the ISBSG  (International SW Benchmarking Standards Group) database but it is not open: http://isbsg.org/
+For project management, there is the ISBSG (International SW Benchmarking Standards Group) database but it is not open: <http://isbsg.org/>
 
-  - `Small data`! R2016 - approx 7,000projects and 60 atts
-<div class="centered">
-<img src="./figures/isbsg.png" width=660 height=109>
-</div>
+-   `Small data`! R2021 - approx 11,600 projects and 60 atts
 
+    ::: centered
+    <img src="./figures/isbsg.png" width="660" height="109"/>
+    :::
 
+## Other popular repositories
 
+OPEN repositories such as ZENODO: <https://zenodo.org/>
 
-## Other popular repositories: PROMISE
-
-PROMISE Repository: http://openscience.us/
-
-<div class="centered">
-<img src="./figures/Promise.png" width=700 height=400>
-</div>
+::: centered
+<img src="./figures/Zenodo.png" width="700" height="300"/>
+:::
 
 ## Other popular repositories: UDD
 
-Ultimate Debian Database: https://udd.debian.org/
+Ultimate Debian Database: <https://udd.debian.org/>
 
-<div class="centered">
-<img src="./figures/UDD.png" width=700 height=420>
-</div>
-
+::: centered
+<img src="./figures/UDD.png" width="700" height="420"/>
+:::
 
 ## SonarQube
 
-<div class="centered">
-<img src="./figures/sonarQube.png" width=700 height=420>
-</div>
+::: centered
+<img src="./figures/sonarQube.png" width="700" height="420"/>
+:::
 
+## GrimoireLab
 
-## Grimoire
-
-<div class="centered">
-<img src="./figures/Grimoire.png" width=700 height=420>
-</div>
-
-
+::: centered
+<img src="./figures/Grimoire.png" width="700" height="420"/>
+:::
 
 ## Example
 
-<div class="centered">
-<img src="./figures/ShowMeTheCode.png" width=400 height=250>
-</div>
+::: centered
+<img src="./figures/ShowMeTheCode.png" width="400" height="250"/>
+:::
 
-(Linus Torvalds, source: http://codequoter.myshopify.com/)
+(Linus Torvalds, source: <http://codequoter.myshopify.com/>)
 
 ## Metrics Grimore
 
 Create an empty database
-```bash
+
+``` bash
 $mysql -u root -p -e 'create database wekaDB;'
 ```
 
 Run `CVSAnaly2` to populate DB tables
-```bash
+
+``` bash
 $cvsanaly2 --db-user=root --db-password=*****  --db- database=wekaDB
 Parsing log for /tmp/weka (svn)
 Executing extensions
@@ -227,7 +231,7 @@ Executing extensions
 
 Data are ready to be used!
 
-```bash
+``` bash
 $ mysql -u root -p -e 'select * from wekaDB.actions limit 5;'
 Enter password: 
 +----+------+---------+-----------+-----------+
@@ -245,51 +249,61 @@ $
 ## Metrics Grimore (cont.)
 
 And visualised
-```bash
+
+``` bash
 vg-github.py --user root --passwd ***** 
       --dir /tmp/temp --removedb --ghuser USER --ghpasswd PW 
       --vgdir /home/drg/git/vizGrimoire  --isuser MetricsGrimoire
 ```
-<div class="centered">
-<img src="./figures/GrimoireVisualisation.png" width=700 height=300>
-</div>
 
+::: centered
+<img src="./figures/GrimoireVisualisation.png" width="700" height="300"/>
+:::
 
 # And Vice versa?
 
 ## Standards and processes for Data Scientist
 
-- CRISP-DM (Cross Industry Standard Process for Data Mining)
+-   CRISP-DM (Cross Industry Standard Process for Data Mining)
 
-<div class="centered">
-<img src="./figures/marban.png" width=660 height=380>
-</div>
+::: centered
+<img src="./figures/marban.png" width="660" height="380"/>
+:::
+
+
+## MLOps - ML Operations 
+
+- ML is part of many systems and it needs to be managed
+
+- MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry
+- [https://mlflow.org/](https://mlflow.org/)
+
+::: centered
+<img src="./figures/MLflow.png" width="800" height="180"/>
+:::
 
 
 
 ## Other Standards
 
+-   PMML (Predictive Model Markup Language) is a language used to represent predictive analytic models. It allows for predictive solutions to be easily shared between PMML compliant applications (Source: Wikipedia).
 
-- PMML (Predictive Model Markup Language) is a language used to represent predictive analytic models. It allows for predictive solutions to be easily shared between PMML compliant applications (Source: Wikipedia).
-
-- ASUM-DM Analytics Solutions Unified Method for Data Mining/Predictive Analytics is a refined and extended CRISP-DM (Source: IBM)
+-   ASUM-DM Analytics Solutions Unified Method for Data Mining/Predictive Analytics is a refined and extended CRISP-DM (Source: IBM)
 
 # What about papers? {.build}
 
 There is a large no. of related conferences:
 
-- Mining Software Repositories (MSR), SCAM, ICSE, ICSM, ESEM, PROMISE ...
+-   Mining Software Repositories (MSR), SCAM, ICSE, ICSM, ESEM, PROMISE ...
 
-- Optimisation related: SSBSE, GECCO (SBSE track)
+-   Optimisation related: SSBSE, GECCO (SBSE track)
 
 Including most important journals: Trans on SE, Empirical SE, etc.
-
 
 ## Conclusions
 
 We can wear many hats!
 
-<div class="centered">
-<img src="./figures/Quora.png" width=600 height=400>
-</div>
-
+::: centered
+<img src="./figures/Quora.png" width="600" height="400"/>
+:::
