@@ -327,12 +327,12 @@ DevOps set of practices that combines SW development (Dev) and IT operations (Op
 :::
 
 
-## Standards and processes for Data Scientist
+## Standards and processes for DM/ML
 
 - CRISP-DM (Cross Industry Standard Process for Data Mining)
 
 ::: centered
-<img src="./figures/marban.png" width="660" height="380"/>
+<img src="./figures/marban.png" width="660" height="440"/>
 :::
 
 
@@ -344,7 +344,8 @@ DevOps set of practices that combines SW development (Dev) and IT operations (Op
 
 
 
-# What about papers? And venues? {.build}
+# What about papers? And venues? 
+
 
 ## Conferences/Workshops
 
@@ -376,10 +377,11 @@ Including most important SE journals:
 - SQJ, IJSEKE etc.
 
 
-## Conclusions
+# Conclusions
 
-We can wear many hats!
+
+## We can wear many hats!
 
 ::: centered
-<img src="./figures/Quora.png" width="600" height="400"/>
+<img src="./figures/Quora.png" width="660" height="350"/>
 :::
