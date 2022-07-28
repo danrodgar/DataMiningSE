@@ -57,15 +57,14 @@ As with `KDD` (Knowledge Discovery in Databases) the idea is also to find useful
 
 ## Sources of Information
 
--   `Version Control Systems` or Soft Conf Mang, e.g., Git, SVN
-    -   Artifacts: Source code, Models, Tests, Requirements, Documentation,...
-    -   Meta-information about the artifacts: What, Who, Where, When, Why
-    -   Main public repositories: GitHUB, Bitbucket
--   `Issue/Bug tracking systems`: Bugzilla, Jira, SourceForge
--   `IDE`s: Software Testing, AI assisted development
--   `Mailing lists` (even question & answer websites)
--   `Google Play` and `AppStore` e.g., reviews, starts (quality), updates ...
--   `Simulation` can be used to generate data! e.g. System Dynamics -`What if?` questions
+- `Version Control Systems` or Soft Conf Mang, e.g., GitHub, Bitbucket
+  -   Artifacts: Source code, models, tests, requirements, documentation,...
+  -   Meta-information: What, Who, Where, When, Why
+- `Issue/Bug tracking systems`: Bugzilla, Jira
+- `IDE`s: Software Testing, AI assisted development
+- `Mailing lists` (even question & answer websites)
+- `Google Play` and `AppStore` e.g., reviews, starts (quality), updates...
+- `Simulation` can be used to generate data! e.g. System Dynamics -`What if?` questions
 
 ------------------------------------------------------------------------
 
@@ -167,7 +166,7 @@ As with `KDD` (Knowledge Discovery in Databases) the idea is also to find useful
 | Graph Mining        |  Dynamic call graphs       |
 
 
-## SE Repositories
+## Software Engineering Repositories
 
 Open Source provides tons of data to be analysed. The most popular (`Big Data`!) source is `GitHub`
 
@@ -185,13 +184,15 @@ Open Source provides tons of data to be analysed. The most popular (`Big Data`!)
 
 ## Data for Project Management
 
-For project management, there is the ISBSG (International SW Benchmarking Standards Group) database but it is not open: <http://isbsg.org/>
+For project management, there is the ISBSG (International Software Benchmarking Standards Group) database but it is **not** open: <http://isbsg.org/>
 
-- R2021 - approx 11,600 projects and around 60 attributes (`Small data` though)
+- R2021 - approx. 11,600 projects and around 60 attributes related to the project management of software related projects
 
-    ::: centered
-    <img src="./figures/isbsg.png" width="660" height="109"/>
-    :::
+::: centered
+<img src="./figures/isbsg.png" width="660" height="109"/>
+:::
+
+`Small data` but difficult to collect though!
 
 ## Other popular repositories
 
