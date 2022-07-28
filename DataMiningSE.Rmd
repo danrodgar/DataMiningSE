@@ -10,28 +10,30 @@ output:
 
 ## Table of Contents
 
--   Data mining for Soft Eng
-    -   Soft Eng/Project Management
-    -   Software Analytics
-    -   Information Sources
-    -   Software Engineering Repositories
--   Tools
--   An vice-versa? (Soft Eng for Data Scientists)
--   Conferences and journals
+- Data mining/ML for Soft Eng
+  + Soft Eng/Project Management
+  + Software Analytics
+  + Information Sources
+  + Software Engineering Repositories
+  + Tools
+- And _vice-versa_? (Soft Eng for DM/ML)
+  + DevOps vs MLOps
+  + CRISP-DM
+- Conferences and journals
 
 # Data Mining and Optimisation for Software Engineering
 
 ## Software Engineering? {.build}
 
--   IEEE Standard Glossary of SE Terminology Std 610.12-1990, 1991
-    1.  SE is the application of a systematic, disciplined, **quantifiable** approach to the development, operation, and maintenance of software; that is, the application of engineering to software.
+- IEEE Standard Glossary of SE Terminology
+    1.  SE is the application of a systematic, disciplined, `quantifiable` approach to the development, operation, and maintenance of software; that is, the application of engineering to software.
     2.  The study of approaches as in (1)
--   Software engineers should ...
-    -   ... Measure, Test SW, Estimate, Manage projects, i.e., effort estimation, planning
+- Software engineers measure, test, ...  
+- And project management, estimate, Manage projects, i.e., effort estimation, planning
 
 > In God we trust, all others must bring data (W. Edwards Deming)
 
-> You can't control, what you can't measure (Tom DeMarco)
+> You can't control, what you can't measure (Lord Kelvin)
 
 ## Software Analytics
 
@@ -63,7 +65,7 @@ As with `KDD` (Knowledge Discovery in Databases) the idea is also to find useful
 -   `IDE`s: Software Testing, AI assisted development
 -   `Mailing lists` (even question & answer websites)
 -   `Google Play` and `AppStore` e.g., reviews, starts (quality), updates ...
--   `Simulation` can also be used to generate tons of data! e.g. System Dynamics to deal with `What if?` type of questions
+-   `Simulation` can be used to generate data! e.g. System Dynamics -`What if?` questions
 
 ------------------------------------------------------------------------
 
@@ -89,45 +91,50 @@ As with `KDD` (Knowledge Discovery in Databases) the idea is also to find useful
 
 (Source:Husson Univ)
 
-## SDLC Example of Possible ML related Questions/Optimisations
+## SDLC and Examples of Possible ML related Questions/Optimisations
 
--   `Requirements`: What requirements will provide most user satisfaction while maximising profit, usability, etc? Effort and cost estimation with AI
+- `Requirements`: 
+  + What requirements will provide most user satisfaction while maximising profit, usability, etc? 
+  + Effort and cost estimation with AI
 
--   `Analysis and design`: Can we re-organise code/modules/packages so is better distributed for performance/division of labour/allocation of resources, maintenance, etc.
-
-    -   Coupling and cohesion of modules
+- `Analysis and design`: 
+  + Can we re-organise code/modules/packages so tey are better distributed for performance/division of labour/allocation of resources, maintenance, etc?
+  + Coupling and cohesion of modules
   
 ------------------------------------------------------------------------
 
--   `Coding`: All types of metrics can be collected from code to predict artifact defects, allocate testing effort, code clone detection, etc.
-
-    - `Genetic Improvement` how to plug modules or third party components automatically (e.g., video codecs)?
-    
-    - `AI Assisted Development` helping with APIs, suggesting code, etc.
+- `Coding`: All types of metrics can be collected from code to predict artifact defects, allocate testing effort, code clone detection, etc.
+  + `AI Assisted Development` helping with APIs, suggesting code, etc.
+  + `Genetic Improvement` how to plug modules or third party components automatically (e.g., video codecs)?
 
 ------------------------------------------------------------------------
 
--   `Testing`: Most testing techniques can be seen as an optimisation problem, test cases should cover (measured as LoC, branches, etc) as much as possible with the minimum no. of test cases
-
-    -   Regression testing optimisation and selection of test cases
+- `Testing`
+  + Most testing techniques can be seen as an optimisation problem, test cases should cover (measured as LoC, branches, etc) as much as possible with the minimum no. of test cases
+    -   Testing automation/optimisation: generation and selection of test cases automatically (mutation testing)
     -   There is also reliability estimation, when to stop testing
 
--   `Maintenance`: Regression testing (or how not to break something when we fix another thing)
+- `Maintenance`
+  + Regression testing (or test we do not to break something when we fixing another)
 
--   and finally `Phase out`: When is time to stop/quit maintaining a project?
+- `Phase out`: 
+  + When is time to stop/quit maintaining a project?
+
+
 
 ## Project Management
 
--   Also ML can be applied in `Project Management` Decisions, decisions, decisions!
-    -   Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements (PMI).
-    -   Multiple projects/personnel/resources
-    -   Iron triangle: Time, cost and scope
+- Also ML can be applied in `Project Management` 
+    - Decisions, decisions, decisions!
+    - Project management is the application of knowledge, skills, tools, and techniques to project activities to meet the project requirements (PMI).
+    - Multiple projects/personnel/resources
+    - Iron triangle: Time, cost and scope. Pick any two! 
 
 ::: centered
 <img src="./figures/Project-triangle.png" width="175" height="175"/>
 :::
 
-Pick any two! (Source:Wikipedia)
+(Source:Wikipedia)
 
 ------------------------------------------------------------------------
 
@@ -140,7 +147,7 @@ Pick any two! (Source:Wikipedia)
     -   Regression techniques
     -   Visualisation of project status, early warning of problems, etc.
 
-## From the DM point of view
+## From the ML point of view
 
 |                     |                            |
 |:-------------------|:---------------------------:|
@@ -150,7 +157,7 @@ Pick any two! (Source:Wikipedia)
 | Time series         | Evolution of Projects (Clustering/classification of time series)  |
 | Text/Web mining     | Reviews, bugs reports, requirements from textual descriptions, code comments, documentation, Function and variable names |
 
-## From the DM point of view (cont.)
+------------------------------------------------------------------------
 
 |                     |                            |
 |--------------------|:---------------------------:|
@@ -159,17 +166,28 @@ Pick any two! (Source:Wikipedia)
 | Sequence patterns   |  Run-time traces           |
 | Graph Mining        |  Dynamic call graphs       |
 
+
 ## SE Repositories
 
-Free/Libre Open Source (FLOSS) has provided tons of data to be analysed. Nowdays, the most popular (`Big Data`!)
+Open Source provides tons of data to be analysed. The most popular (`Big Data`!) source is `GitHub`
 
 ::: centered
-<img src="./figures/GitHub.png" width="290" height="90"/>
+<img src="./figures/GitHub.png" width="275" height="70"/>
 :::
+
+`Diomidis Spinellis` has maintains a list of resources for **mining software engineering** research
+<https://github.com/dspinellis/awesome-msr>
+
+::: centered
+<img src="./figures/dspinellis.png" width="600" height="200"/>
+:::
+
+
+## Data for Project Management
 
 For project management, there is the ISBSG (International SW Benchmarking Standards Group) database but it is not open: <http://isbsg.org/>
 
--   `Small data`! R2021 - approx 11,600 projects and 60 atts
+- R2021 - approx 11,600 projects and around 60 attributes (`Small data` though)
 
     ::: centered
     <img src="./figures/isbsg.png" width="660" height="109"/>
@@ -179,9 +197,14 @@ For project management, there is the ISBSG (International SW Benchmarking Standa
 
 OPEN repositories such as ZENODO: <https://zenodo.org/>
 
+ + It provides code and data with a DOI.
+ 
 ::: centered
 <img src="./figures/Zenodo.png" width="700" height="300"/>
 :::
+
+
+
 
 ## Other popular repositories: UDD
 
@@ -246,9 +269,9 @@ Enter password:
 $
 ```
 
-## Metrics Grimore (cont.)
+## Metrics GrimoreLab (cont.)
 
-And visualised
+And visualised:
 
 ``` bash
 vg-github.py --user root --passwd ***** 
@@ -260,45 +283,98 @@ vg-github.py --user root --passwd *****
 <img src="./figures/GrimoireVisualisation.png" width="700" height="300"/>
 :::
 
-# And Vice versa?
+# And Vice versa? Software Engineering for Machine Learning?
+
+## From DevOps...
+
+DevOps set of practices that combines SW development (Dev) and IT operations (Ops).
+
+::: centered
+<img src="./figures/DevOps.png" width="540" height="260"/>
+:::
+
+... to MLOps
+
+## MLOps - Machine Learning Operations 
+
+- `Machine Learning Operations` (MLOps) defines language-, framework-, platform-, and infrastructure-agnostic practices to design, develop, and maintain machine learning applications.
+<https://ml-ops.org/>
+
+- MLOps streamlines the process of taking machine learning models to production, and then maintaining and monitoring them. MLOps is a collaborative function, often comprising data scientists, _devops_ engineers, and IT. (DataBricks)
+
+- Machine Learning is part of many software systems and it needs to be managed
+
+
+## MLOps Stack - https://ml-ops.org/
+
+::: centered
+<img src="figures/mlops-stack.jpg" width="710" height="500"/>
+:::
+
+
+
+
+## MLOps Tools
+
+- `MLflow` is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry
+
+- [https://mlflow.org/](https://mlflow.org/)
+
+- `MLflow` components:
+
+::: centered
+<img src="./figures/MLflow.png" width="720" height="150"/>
+:::
+
 
 ## Standards and processes for Data Scientist
 
--   CRISP-DM (Cross Industry Standard Process for Data Mining)
+- CRISP-DM (Cross Industry Standard Process for Data Mining)
 
 ::: centered
 <img src="./figures/marban.png" width="660" height="380"/>
 :::
 
 
-## MLOps - ML Operations 
-
-- ML is part of many systems and it needs to be managed
-
-- MLflow is an open source platform to manage the ML lifecycle, including experimentation, reproducibility, deployment, and a central model registry
-- [https://mlflow.org/](https://mlflow.org/)
-
-::: centered
-<img src="./figures/MLflow.png" width="800" height="180"/>
-:::
-
-
-
 ## Other Standards
 
--   PMML (Predictive Model Markup Language) is a language used to represent predictive analytic models. It allows for predictive solutions to be easily shared between PMML compliant applications (Source: Wikipedia).
+- Predictive Model Markup Language (PMML) is a language used to represent predictive analytic models. It allows for predictive solutions to be easily shared between PMML compliant applications (Source: Wikipedia).
 
--   ASUM-DM Analytics Solutions Unified Method for Data Mining/Predictive Analytics is a refined and extended CRISP-DM (Source: IBM)
+- ASUM-DM Analytics Solutions Unified Method for Data Mining/Predictive Analytics is a refined and extended CRISP-DM (Source: IBM)
 
-# What about papers? {.build}
 
-There is a large no. of related conferences:
 
--   Mining Software Repositories (MSR), SCAM, ICSE, ICSM, ESEM, PROMISE ...
+# What about papers? And venues? {.build}
 
--   Optimisation related: SSBSE, GECCO (SBSE track)
+## Conferences/Workshops
 
-Including most important journals: Trans on SE, Empirical SE, etc.
+There is a large number of related conferences (in fact, nowadays  most of them seem ML conferences!:
+
+- ICSE (Intl Conf on Soft Eng)
+- ICSM (Intl Conf on Software Maintenance and Evolution)
+- MSR (Mining Software Repositories)
+- PROMISE (Predictive Models and Data Analytics in Software Engineering)
+- Etc.
+
+
+
+## Optimisation related venues: 
+
+- SSBSE (Search Based Software Engineering)
+- GECCO (SBSE track)
+- ...
+
+
+## Journals
+
+Including most important SE journals: 
+
+- IEEE Trans on Soft Eng
+- Springer Empirical Soft Eng
+- ACM TOSEM
+- Journal of Sys and Soft.
+- SQJ, IJSEKE etc.
+
 
 ## Conclusions
 

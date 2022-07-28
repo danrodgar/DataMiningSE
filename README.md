@@ -1,4 +1,4 @@
-# DataMiningSE
-Data Mining in Software Engineering (and Vice versa)
-BIDAS Invited talk, Dec 19, 2016 @ BCAM, 1st Data Science Workshop
+# Data Mining in Software Engineering (and Vice versa)
+
+
 https://danrodgar.github.io/DataMiningSE/
