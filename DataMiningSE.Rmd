@@ -1,11 +1,12 @@
 ---
 title: "Data Mining and optimisation in Soft Eng (and vice versa)"
 author: "Daniel Rodriguez, University of Alcala"
-date: 'July 29th, 2022 @ COMPDES 2022, UNAH, Honduras'
+date: "July 29th, 2022 @ COMPDES 2022, UNAH, Honduras"
 output:
   ioslides_presentation:
     logo: logoUAH.png
   slidy_presentation: default
+  beamer_presentation: default
 ---
 
 ## Table of Contents
@@ -149,9 +150,16 @@ As with `KDD` (Knowledge Discovery in Databases) the idea is also to find useful
 ## From the ML point of view
 
 |                     |                            |
-|:-------------------|:---------------------------:|
-| Classification      | Defect prediction      |
-| Regression          | Effort and cost estimation   |
+|:--------------------|:---------------------------:|
+| **Supervised learning** Classification      | Defect prediction |
+| (Semi-supervised)   | Apps reviews, text mining of docs |
+| Regression          | Effort and cost estimation |
+| **Non-supervised learning** Clustering  | Clustering of users, projects, etc. |
+
+------------------------------------------------------------------------
+
+|                     |                            |
+|:--------------------|:---------------------------:|
 | Recommender Systems | How to use an API, function calls that tend to be together   |
 | Time series         | Evolution of Projects (Clustering/classification of time series)  |
 | Text/Web mining     | Reviews, bugs reports, requirements from textual descriptions, code comments, documentation, Function and variable names |
@@ -164,6 +172,31 @@ As with `KDD` (Knowledge Discovery in Databases) the idea is also to find useful
 | Process Mining      | Logs collected automatically in Web servers, how actual processes are run, are they followed correctly? can processes be optimised? |
 | Sequence patterns   |  Run-time traces           |
 | Graph Mining        |  Dynamic call graphs       |
+
+
+## ML Preprocessing
+
+Also, all datasets suffer from many of the ML issues.
+
+Pre-processing is a major step having to deal with:
+
++ Feature selection
++ Imbalance
++ Data drift
++ Noise
++ Missing values (and imputation)
++ Etc.
+
+
+## And Other ML issues
+
+- Fairness
+- Explainability
+
+::: centered
+<img src="./figures/shap.png" width="520" height="380"/>
+:::
+
 
 
 ## Software Engineering Repositories
@@ -356,6 +389,7 @@ There is a large number of related conferences (in fact, nowadays  most of them 
 - ICSM (Intl Conf on Software Maintenance and Evolution)
 - MSR (Mining Software Repositories)
 - PROMISE (Predictive Models and Data Analytics in Software Engineering)
+- EASE (Evaluation and Assessment in Software Engieering)
 - Etc.
 
 
@@ -375,7 +409,9 @@ Including most important SE journals:
 - Springer Empirical Soft Eng
 - ACM TOSEM
 - Journal of Sys and Soft.
-- SQJ, IJSEKE etc.
+- SQJ
+- IJSEKE 
+- Etc.
 
 
 # Conclusions
